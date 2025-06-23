@@ -5,10 +5,11 @@
 }
 
 :root{
-    --primaria : rgb(0, 132, 255) ;
-    --branco : rgb(221, 221, 221) ;
-    --preto : rgb(51, 51, 51) ;
-    --pretoTransparent : rgba(29, 29, 29, 0.74) ;
+    --primaria : #D8A7B1 ;
+    --branco : #59344F;
+    --preto : #F8F1F1;
+    --pretoTransparent : #C2B5BA ;
+    --ouroRosado :  #C9A27E; 
 }
 
 hr{
@@ -32,7 +33,7 @@ button{
 }
 
 section, header , footer {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -47,14 +48,13 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+ 
 }
 
 header{
     justify-content: space-around;
     padding: 20px 0px;
-    background-color: var(--pretoTransparent);
-    margin: 20px auto;
+    background-color: var(--branco);
 }
 
 nav ul{
@@ -66,7 +66,7 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    color: var(--branco);
+    color: #ffffff;
     font-size: 14pt;
 }
 

@@ -1,39 +1,189 @@
-#banner{
-    width: 100%;
-    height: 100vh;
-    padding: 0%;
-    background-image: url(../images/banner.png);
+/* Banner principal */
+#banner {
+    width: 99%;
+    height: 1000px;
+    padding: 0;
+    background-image: url(../images/bannerINDEX.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    padding-left: 20px;
 }
 
-#banner h1, #promotionBook h1{
+/* Estilo do título do banner */
+#banner h1 { 
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-variation-settings: "wdth" 98;
     color: var(--branco);
-    background-color: var(--primaria);
     padding: 10px;
-    font-size: 40pt;
+    font-size: 60pt;
 }
 
-#banner button{
+/* Parágrafo do banner */
+#banner p {
+    color: #000000;
+    font-size: 30px;
+}
+
+/* Botão do banner */
+#banner button {
     margin-bottom: 20px;
 }
 
+/* Estilo do botão */
+button {
+    position: relative;
+    padding: 12px 35px;
+    background: #ffdc00;
+    font-size: 17px;
+    font-weight: 900;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #52288e;
+    border: none;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 0 #ffef8c80;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
-#intro{
+/* Estrelas decorativas do botão */
+.star-1, .star-2, .star-3, .star-4, .star-5, .star-6 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: -5;
+    transition: all 1s ease;
+}
+
+.star-1 {
+    top: 20%;
+    left: 20%;
+    fill: #ffdc00;
+    width: 25px;
+    filter: drop-shadow(0 0 0 #ffef8c);
+}
+
+.star-2 {
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    fill: #52288e;
+    filter: drop-shadow(0 0 0 #d6cbe4);
+}
+
+.star-3 {
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    fill: #52288e;
+    filter: drop-shadow(0 0 0 #ffef8c);
+}
+
+.star-4 {
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    fill: #e0dd04;
+    filter: drop-shadow(0 0 0 #ffef8c);
+}
+
+.star-5 {
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    fill: #ff00c8;
+    filter: drop-shadow(0 0 0 #d6cbe4);
+}
+
+.star-6 {
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    color: #52288e;
+    filter: drop-shadow(0 0 0 #ffef8c);
+}
+
+/* Efeito hover nas estrelas */
+button:hover {
+    background: #d6b900;
+    box-shadow: 0 0 25px #ffef8c80;
+}
+
+button:hover .star-1 {
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+    transform: rotate(15deg);
+}
+
+button:hover .star-2 {
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+    transform: rotate(-20deg);
+}
+
+button:hover .star-3 {
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+    transform: rotate(50deg);
+}
+
+button:hover .star-4 {
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+}
+
+button:hover .star-5 {
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+    transform: rotate(-25deg);
+}
+
+button:hover .star-6 {
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+    transform: rotate(60deg); /* corrigido aqui */
+}
+
+.fil0 {
+    fill: #fffdef;
+}
+/* Outras seções */
+
+#intro {
     gap: 10px;
 }
 
-#aboutBook{
+#aboutBook {
     background-color: var(--preto);
     color: var(--branco);
 }
 
-#deviceMobile{
+#deviceMobile {
     width: 100px;
     height: 216px;
     background-image: url(../images/livros/percy1.jpg);
@@ -42,16 +192,16 @@
     background-position: center;
 }
 
-#deviceMobile img{
+#deviceMobile img {
     width: 100%;
     height: 100%;
 }
 
-#promotion{
+#promotion {
     gap: 10px;
 }
 
-#promotionBook{
+#promotionBook {
     width: 80%;
     height: 500px;
     background-image: url(../images/bannerPromoção.png);
